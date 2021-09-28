@@ -1,5 +1,5 @@
 body {
-  margin-top: 200px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@ body {
 .calculator {
   margin: 0;
   position: relative;
-  width: 400px;
+  width: 350px;
   height: 625px;
   background: #d3d3d3;
   padding: 10px;
