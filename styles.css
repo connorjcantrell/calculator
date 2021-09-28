@@ -1,12 +1,20 @@
 body {
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
 }
 
 .calculator {
-  width: 60%;
-  height: 60%;
+  margin: 0;
+  position: relative;
+  width: 400px;
+  height: 625px;
+  background: #d3d3d3;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 1px grey;
 }
 
 .grid {
@@ -14,27 +22,57 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
+  margin: 10px;
 }
 
-#screen {
+.grid > .btn {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  height: 70px;
+  margin: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 200%;
+  box-shadow: 1px 1px 4px 1px grey;
+}
+
+.screen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-column: span 4;
   grid-row: span 2;
-  background: grey;
+  background: #eeeeee;
+  margin: 5px;
+  margin-bottom: 10px;
   border-radius: 10px;
+  box-shadow: inset 2px 2px 5px grey;
+}
+
+.screen > p {
+  margin: 20px;
+  text-align: right;
+  font-size: 150%;
+  grid-row: span 1;
 }
 
 .lg-btn {
   grid-column: span 2;
   grid-row: span 1;
-  background: indianred;
-  height: 60px;
-  border-radius: 10px;
+}
+
+#delete {
+  background: #f6575a;
+}
+
+#clear {
+  background: #80dae5;
 }
 
 .sm-btn {
   grid-column: span 1;
   grid-row: span 1;
-  background: lightblue;
-  height: 60px;
-  border-radius: 10px;
+  background: #eeeeee;
 }
