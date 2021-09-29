@@ -10,29 +10,30 @@
 <body>
     <div class="calculator">
         <div class="grid">
-            <div id="screen" class="screen">
-                <p id="total">0</p>
-                <p id="input"></p>
+            <div id="output">
+                <div id="previous-operand"></div>
+                <div id="current-operand"></div>
             </div>
-            <div id="clear" class="lg-btn btn">CLEAR</div>
-            <div id="delete" class="lg-btn btn">DELETE</div>
-            <div id="7" class="sm-btn btn">7</div>
-            <div id="8" class="sm-btn btn">8</div>
-            <div id="9" class="sm-btn btn">9</div>
-            <div id="divide" class="sm-btn btn">/</div>
-            <div id="4" class="sm-btn btn">4</div>
-            <div id="5" class="sm-btn btn">5</div>
-            <div id="6" class="sm-btn btn">6</div>
-            <div id="multiply" class="sm-btn btn">x</div>
-            <div id="3" class="sm-btn btn">3</div>
-            <div id="2" class="sm-btn btn">2</div>
-            <div id="1" class="sm-btn btn">1</div>
-            <div id="subtract" class="sm-btn btn">-</div>
-            <div id="decimal" class="sm-btn btn">.</div>
-            <div id="0" class="sm-btn btn">0</div>
-            <div id="equals" class="sm-btn btn">=</div>
-            <div id="add" class="sm-btn btn">+</div>
+            <button id="clear" class="lg-btn btn">CLEAR</button>
+            <button id="delete" class="lg-btn btn">DELETE</button>
+            <button id="7" class="sm-btn number">7</button>
+            <button id="8" class="sm-btn number">8</button>
+            <button id="9" class="sm-btn number">9</button>
+            <button id="buttonide" class="sm-btn operation">/</button>
+            <button id="4" class="sm-btn number">4</button>
+            <button id="5" class="sm-btn number">5</button>
+            <button id="6" class="sm-btn number">6</button>
+            <button id="multiply" class="sm-btn operation">*</button>
+            <button id="3" class="sm-btn number">3</button>
+            <button id="2" class="sm-btn number">2</button>
+            <button id="1" class="sm-btn number">1</button>
+            <button id="subtract" class="sm-btn operation">-</button>
+            <button id="decimal" class="sm-btn number">.</button>
+            <button id="0" class="sm-btn number">0</button>
+            <button id="equals" class="sm-btn assignment">=</button>
+            <button id="add" class="sm-btn operation">+</button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
